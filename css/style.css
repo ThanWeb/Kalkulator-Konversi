@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Nova+Mono&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #8D8DAA;
+    --grey: #DFDFDE;
+    --white: #FFFFFF;
+    --navy: #525E75;
+}    
+
+body {
+    background-color: var(--grey);
+    font-family: 'Monda', sans-serif;
+    color: var(--white);
+}
+
+body > div {
+    width: 80%;
+    margin: auto;
+    background-color: var(--navy);
+    padding: 4em;
+    border-radius: 0 0 2em 2em;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+    text-align: center;
+    margin: 1.5em;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+.calculators {
+    width: 90%;
+    margin: auto;
+}
+
+.calculators > div {
+    margin: 1em 1em 0 1em;
+}
+
+.field-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 2em;
+}
+
+.field-input :nth-child(1) {
+    flex-basis: 50%;
+}
+
+.field-input :nth-child(2) {
+    flex-basis: 50%;
+}
+
+.field-input p {
+    text-align: left;
+}
+
+.input-column {
+    font-family: 'Monda', sans-serif;
+    font-size: 1em;
+    padding-left: 0.5em;
+    margin: 0 1em;
+    border-radius: 1em;
+    border: 3px solid var(--purple);
+}
+
+.input-column:hover {
+    border: 3px solid var(--grey);
+}
+
+.hidden {
+    display: none;
+}
+
+#alert {
+    margin-top: 2em;
+    text-align: center;
+    color: var(--white);
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .field-input {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1090px) {
+    .field-input {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Konversi</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1>Kalkulator Konversi</h1>
+            </header>
+            <main>
+                <div class="calculators">
+                    <div class="field-input">
+                        <p>Biner / Binary / Basis 2</p>
+                        <input type="text" name="input" placeholder="0" id="binary-input" class="input-column" oninput="convert(1);">
+                    </div>
+                    <div class="field-input">
+                        <p>Desimal / Decimal / Basis 10</p>
+                        <input type="text" name="input" placeholder="0" id="decimal-input" class="input-column" oninput="convert(2);">
+                    </div>
+                    <div class="field-input">
+                        <p>Oktal / Octal / Basis 8</p>
+                        <input type="text" name="input" placeholder="0" id="octal-input" class="input-column" oninput="convert(3);">
+                    </div>
+                    <div class="field-input">
+                        <p>Heksadesimal / Hexadecimal / Basis 16</p>
+                        <input type="text" name="input" placeholder="0" id="hexadecimal-input" class="input-column" oninput="convert(4);">
+                    </div>
+                    <div>
+                        <p id="alert" class="hidden">Alert</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
