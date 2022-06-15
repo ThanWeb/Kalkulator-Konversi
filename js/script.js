@@ -49,6 +49,7 @@ function convert(basis){
     if(flag == 0)
         checkCharacter(basis);
     else{
+        document.getElementById("alert").classList.add("hidden");
         const allBasis = [2, 10, 8, 16];
 
         let binaryValue = parseInt(inputValue, allBasis[basis-1]).toString(2);
@@ -71,15 +72,12 @@ function checkCharacter(id){
     const DecimalAlert = "Maaf, bilangan desimal hanya mengakui karakter 0, 1, 2, 3, 4, 5, 6, 7, 8 dan 9";
     const OctalAlert = "Maaf, bilangan oktal hanya mengakui karakter 0, 1, 2, 3, 4, 5, 6 dan 7";
     const HexAlert = "Maaf, bilangan heksadesimal hanya mengakui karakter 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E dan F";
+    console.log(id);
 
     if(id >= 1 && id <= 4)
         alertMessage.classList.remove("hidden");
 
     switch(id) {
-        case 0:
-            alertMessage.classList.add("hidden");
-            break;
-
         case 1:
             alertMessage.innerHTML = binaryAlert;
             break;
